@@ -41,7 +41,9 @@
 
         Pass {
             CGPROGRAM
-            #pragma multi_compile _ CALC_DEPTH
+            #pragma multi_compile _ CALC_DEPTH 
+            #pragma multi_compile __ DYNAMIC_FLUID 
+            #pragma multi_compile ___ DRAW_LANDSCAPE
             #pragma vertex vertLandscape
             #pragma fragment frag
 
